@@ -1,0 +1,127 @@
+img {
+    display: block;
+    margin: 0 auto;
+    }
+
+
+img {
+    width: 270px; 
+    height: 270px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 20px; 
+}
+
+
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+p{
+    background-color: rgb(187, 193, 198);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+p:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2{
+    color: #007bff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2:hover {
+    color: #0056b3;
+    transition: color 0.3s ease;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #ff1a1a;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .todo-container {
+    background-color: #444;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode button {
+    background-color: #555;
+    color: #fff;
+    border-color: #fff;
+}
+
+.dark-mode input[type="text"] {
+    background-color: #666;
+    color: #fff;
+    border-color: #fff;
+}
+
+.dark-mode select, .dark-mode input[type="range"] {
+    background-color: #666;
+    color: #fff;
+    border-color: #fff;
+}
+
+.container {
+    background-color: #ffffff; /* Warna latar belakang kontainer */
+    border-radius: 10px; /* Sudut yang membulat */
+    padding: 20px; /* Jarak di dalam kontainer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan kontainer */
+    max-width: 600px; /* Lebar maksimum */
+    width: 100%; /* Lebar penuh */
+    margin: 20px auto; /* Margin otomatis di kiri dan kanan */
+}
+
+.dark-mode {
+    background-color: #444; /* Ubah warna latar belakang kontainer dalam mode gelap */
+    color: #fff; /* Ubah warna teks */
+}
+
+.dark-mode .todo-container {
+    background-color: #555; /* Gaya tambahan untuk todo-container dalam mode gelap */
+}
+
+.dark-mode button {
+    background-color: #666; /* Gaya untuk tombol dalam mode gelap */
+    color: #fff; /* Warna teks tombol dalam mode gelap */
+}
+
+.dark-mode input[type="text"] {
+    background-color: #777; /* Gaya untuk input dalam mode gelap */
+    color: #fff; /* Warna teks input dalam mode gelap */
+}

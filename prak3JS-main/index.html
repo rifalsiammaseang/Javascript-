@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil dan Daftar Tugas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="rifal photo.jpg" alt="jjppgg" width="270" height="355">
+    <h2>About me</h2>
+    <p>Olahraga skate adalah olahraga yang sedang saya tekuni belakangan ini, karena skate melatih fokus dan keseimbangan kita.</p>
+    
+    <h2>Projects</h2>
+    <p>On going</p>
+    <p>Example for tekweb</p>
+    
+    <h2>Contact</h2>
+    <p>2300016086@webmail.uad.ac.id</p>
+
+    <div class="container">
+        <div class="todo-container">
+            <h2>My To-Do List</h2>
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add</button>
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="settings">
+            <h3>Ubah Tampilan</h3>
+            <label for="bgColor">Warna Latar:</label>
+            <select id="bgColor" onchange="changeBackgroundColor()">
+                <option value="#d3d3d3">Abu-abu Muda</option>
+                <option value="#ffffff">Putih</option>
+                <option value="#f0e68c">Kuning</option>
+            </select>
+            <br>
+            <label for="fontSize">Ukuran Font:</label>
+            <input type="range" id="fontSize" min="12" max="24" value="16" oninput="changeFontSize(this.value)">
+            <span id="fontSizeValue">16px</span>
+            <br>
+            <button onclick="toggleDarkMode()">Ganti Mode Gelap</button>
+            <button onclick="changeFontStyle()">Ganti Gaya Font</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
